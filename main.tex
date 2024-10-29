@@ -1,0 +1,378 @@
+\section{\subparagraph{%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beamer Presentation
+% LaTeX Template
+% Version 1.0 (10/11/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
+
+\documentclass{beamer}
+
+\mode<presentation> {
+
+% The Beamer class comes with a number of default slide themes
+% which change the colors and layouts of slides. Below this is a list
+% of all the themes, uncomment each in turn to see what they look like.
+
+%\usetheme{default}
+%\usetheme{AnnArbor}
+%\usetheme{Antibes}
+%\usetheme{Bergen}
+%\usetheme{Berkeley}
+%\usetheme{Berlin}
+%\usetheme{Boadilla}
+%\usetheme{CambridgeUS}
+%\usetheme{Copenhagen}
+%\usetheme{Darmstadt}
+\usetheme{Dresden}
+%\usetheme{Frankfurt}
+%\usetheme{Goettingen}
+%\usetheme{Hannover}
+%\usetheme{Ilmenau}
+%\usetheme{JuanLesPins}
+%\usetheme{Luebeck}
+%\usetheme{Madrid}
+%\usetheme{Malmoe}
+%\usetheme{Marburg}
+%\usetheme{Montpellier}
+%\usetheme{PaloAlto}
+%\usetheme{Pittsburgh}
+%\usetheme{Rochester}
+%\usetheme{Singapore}
+%\usetheme{Szeged}
+%\usetheme{Warsaw}
+
+% As well as themes, the Beamer class has a number of color themes
+% for any slide theme. Uncomment each of these in turn to see how it
+% changes the colors of your current slide theme.
+
+%\usecolortheme{albatross}
+%\usecolortheme{beaver}
+%\usecolortheme{beetle}
+%\usecolortheme{crane}
+%\usecolortheme{dolphin}
+%\usecolortheme{dove}
+%\usecolortheme{fly}
+%\usecolortheme{lily}
+%\usecolortheme{orchid}
+%\usecolortheme{rose}
+%\usecolortheme{seagull}
+%\usecolortheme{seahorse}
+%\usecolortheme{whale}
+\usecolortheme{wolverine}
+
+%\setbeamertemplate{footline} % To remove the footer line in all slides uncomment this line
+%\setbeamertemplate{footline}[page number] % To replace the footer line in all slides with a simple slide count uncomment this line
+}
+
+\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+\usepackage{hyperref}
+ 
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\title[DIFFERENSIAL TENGLAMALAR]{MAVZU: Lagranj va Klero tenglamalari va ularga misollar.}
+\author[Aliyev Abdulvosid]{Kanpuyuter injinering AT-servis\\talabasi}
+\institute[UTRGV] 
+{
+Toshkent axborot texnologiyalari universiteti Farg'ona filiali \\ 
+\medskip
+\textit{@aliyevabdulvosid29gmail.com} 
+}
+\date[Math Project Presentation]{1.05.2024}
+
+
+\begin{frame}
+\titlepage % Print the title page as the first slide
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+%	PRESENTATION SLIDES
+%----------------------------------------------------------------------------------------
+
+%------------------------------------------------
+\section{Differensial tenglamalar} % Sections can be created in order to organize your presentation into discrete blocks, all sections and subsections are automatically printed in the table of contents as an overview of the talk
+%------------------------------------------------
+
+\begin{frame}
+\begin{center}
+\color{red}
+  \textbf{KIRISH}
+  \\Chiziqli differensial tenglama haqida tushuncha.
+Chiziqli differensial tenglamalarni yechishning Lagranj va Klero usullari.
+\\
+\end{center} 
+\textbf{Quydagi} 
+ko’rinishdagi y va y  ga nisbatan chiziqli bo’lgan tenglama chiziqli tenglama deyiladi. Tenglamadagi g(x) va f (x) funksiyalar (a,b) intervalda uzluksiz
+$ ( a, b).$
+\\
+\begin{equation}
+\color{blue}    y'+g(x)y=f(x)
+   \end{equation}
+\quad ko’rinishdagi y va y' ga nisbatan chiziqli bo’lgan tenglama chiziqli tenglama deyiladi. Tenglamadagi g(x) va f (x) funksiyalar (a,b) intervalda uzluksiz Agar (1) tenglamada f (x)=0 (x\in(a,b)) bo’lsa , u holda y'+g(x)y=0
+ tenglama bir jinsli deyiladi.\\
+\end{frame}
+
+%---------------------------------
+
+\begin{frame}
+\quad Agar (1) tenglamada $f(x)=0$ bo’lsa bir jinsli bo’lmagan tenglama deyiladi. Bu tenglama uchun boshlang’ich shart qo’yib, Koshi masalasini hosil qilamiz. Pikar teoremasiga ko’ra agar $g(x)$ va $f(x)$ funksiyalar $(a,b)$ intervalda uzluksiz bo’lsa, u holda 
+\quad 
+$y(x_{0})=y_0$
+\\ 
+\quad  shartni qanoatlantiruvchi yagona yechimi mavjud, shuningdek bir jinsli tenglamalarning integral chiziqlari OX o’qini kesib o’tmaydi.
+Haqiqatdan ham, agar OX o’qini kesib o’tsa, u holda Koshi masalasining yechimini yagonaligi buziladi, chunki y=0 ( OX o’qi) ham (2) tenglamaning yechimi.
+\\
+\quad  Shunday qilib, quyidagi xulosaga kelamiz. Agar (2) tenglamani biron-bir yechimi (a,b) intervalni bitta nuqtasida nolga aylansa, u holda butun (a,b) intervalda nolga teng va aksincha (a,b) intervalni bitta nuqtasida nolga teng bo’lmasa, butun intervalda noldan farqli.
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\quad \textbf{Chiziqli tenglama xossalari } 
+1.Chiziqli tenglamada x argumentni ixtiyoriy
+$x=x(t) $
+ almashtirilganda ham, o’z ko’rinishini (ya’ni chiziqliligini) o’zgartirmaydi.
+ 2. Chiziqli tenglamada y noma’lum funksiya ixtiyoriy
+
+\begin{equation}
+\color{red} y=a(x)z+b(x)
+ \end{equation}
+chiziqli almashtirilganda ham o’z ko’rinishini (ya’ni chiziqliligini) o’zgartirmaydi.\\
+% $ye^\int^{2xdx}$
+Bir jinsli (2) tenglamaning umumiy yechimini izlanish uchun uni quyidagicha yozib olamiz. $dy=-y’(x)dx$ tenglikdan  
+\end{frame}
+
+%---------------------------------
+\begin{frame}
+\begin{center}
+\color{red}
+    \textbf{ Bir jinsli (2) tenglamaning umumiy yechimini izlanish uchun uni quyidagicha yozib olamiz. $dy=-y’(x)dx$ tenglikdan  }
+\end{center}
+\begin{center}
+\color{red} $dy=-y’(x)dx $ tenglikdan
+$dy/d = -p(x)dx$ , buni integrallab
+$y = 〖ce〗^(-\int_{x_0}^{x}p(x)dx)$
+ko’rinishdagi yechimini olamiz, bunda
+\color{blue} $c=const$
+\end{center}
+ \quad ko’rinishidagi yechim ushbu xossalarga ega. \textit{1. Agar y1 (2) tenglamaning xususiy yechimi bo’lsa, u holda} $y  +p(x)y0 (4) $
+ ayniyat o’rinli hamda y=cy1 (5) funksiya ham uning yechimi bo’ladi.  \textbf{ISBOT:} y=cy1 funksiyani (2) tenglamaga qo’yamiz 
+\begin{equation}
+\color{red} (cy_{1})'+p(x)(cy_{1})=s(y_{1}' +p(x)y_{1})
+ \end{equation}
+\quad
+(4) tenglikka ko’ra yuqoridagining o’ng tomoni nolga teng , ya’ni $s(y_{1}'+p(x)y_{1})=0$ Demak,(5) ko’rinishdagi funksiya tenglamaning yechimi. 
+2. Agar y1 (2) ni noldan farqli xususiy yechimi bo’lsa, 
+\end{frame}
+%---------------------------------
+\begin{frame} u holda (5) ko’rinishdagi funksiya (2) ning umumiy yechimi bo’ladi. 
+Mavzu davomida bir jinsli bo’lmagan tenglama uchun o’zgarmasni variatsiyalash usuli bilan tanishamiz. Bu usul ba’zan Lagranj usuli deb yuritiladi. (1) tenglamaning yechimini (3) ko’rinishida qidiramiz, ya’ni
+$y = ce^\int^{p(x)dx}$
+% $ye^\int^{2xdx}$
+bunda, c o’zgarmasni o’rniga, c=c(x) uzluksiz differensiallanuvchi funksiya deb, (6)dan hosila olamiz y’ = c’(x)e^\int^{p(x)c(x)dx}-p(x)c(x)e^\int^{p(x)dx} 
+\\
+\quad(6) va (7) ni (1) tenglamaga qo’yamiz.
+\begin{equation}
+\color{red}  c'(x)e^\int^{p(x)dx}-p(x)c(x)e^\int^{p(x)dx}
+\end{equation}
+bundan
+\begin{equation}
+\color{red} c'=(x)e^\int^{p(x)dx}=f(x)
+\end{equation}
+yoki
+\begin{equation}
+\color{red}  c'(x)=f(x)e^\int^{p(x)dx}=f(x)
+\end{equation}
+tenglikka ega bo’lamiz. 
+So’nggi tenglikni integrallab,. \\
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\begin{equation}
+\color{red}  c(x) = \int(f(x)e^\int^{p(x)dx}dx+c_{1},   c_{1}=const
+\end{equation}
+ko’rinishdagi (1) tenglamaning umumiy yechimini topamiz. (8)ni yoyib yozsak
+\begin{equation}
+\color{red}  y = e^\int^{p(x)dx}(c_{1}+\int(f(x)e^\int^{p(x)dx}dx)
+\end{equation}
+ko’rinishga keladi. Buning birinchi hadi (1) tenglamani biror xususiy yechimini bildirsa, ikkinchi qo’shiluvchi (2) tenglamaning umumiy yechimini ifodalaydi.eslatma yuqoridagi (3) va (9) formulalardagi integralni x_{0} dan x gacha aniq integralga almashtirish mumkin, bunda (x_{0}\in(a,b)), 
+ya’ni
+% \begin{equation}
+% color{red}  y = e^\int_{x}^{x_0}^{p(x)dx}(C_{1}+\int_{x}^{x_0}f(x)e^\int_{x}^{x_0}^{p(x)dx}dx)
+% \end{equation}
+Agar y(x0)=y0 boshlang’ich shart berilsa , u holda
+% $y = e^(-∫_x0^x▒p(x)dx)(y0 + ∫_x0^x▒〖f(x)e^∫_x0^x▒p(x)dx 〗dx) $ 
+\end{frame}
+
+%------------------------------------------------
+\section{Abdulvosid}
+%------------------------------------------------
+
+%\begin{frame}
+%\frametitle{Bernhard Riemann}
+%\textit{"The rules for finite sums only apply to the series of the first  class [absolutely convergent series]. Only these can be considered as the aggregates of their terms; the series of the second class [conditionally convergent series] cannot. This circumstance was overlooked by mathematicians of the previous century, most likely, mainly on the grounds that the series which progress by increasing power of a variable generally (that is, excluding individual values of this variable) belong to the first class." -Bernhard Riemann (1826-1866)}
+%be careful when rearranging series (rules)%
+%\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\begin{equation}
+\color{red}  y = e^\int_{x}^{x_0}{p(x)dx}(C_{1}+\int_{x}^{x_0}f(x)e^\int_{x}^{x_0}^{p(x)dx}dx)
+\end{equation}
+Agar y(x0)=y0 boshlang’ich shart berilsa , u holda
+\begin{equation}
+\color{red}  y = e^\int_{x}^{x_0}^{p(x)dx}(y_{0}+\int_{x}^{x_0}f(x)e^\int_{x}^{x_0}^{p(x)dx}dx)
+\end{equation}
+Koshi ko’rinishidagi umumiy yechimga ega bo’lamiz. 
+\quad\textbf{ESLATMA:}2. Agar P(x) va f (x) funksiyalar (-\infty,+\infty) \\
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\quad intervalda aniqlangan va uzluksiz bo’lsa, u holda ixtiyoriy $x_{0},y_{0}$ chiziq $(-\infty,+\infty)$ intervalda silliq bo’ladi.\\
+\quad\textbf{Lagranj usuli.} Bu usulni ushbu tartibda bajariladi: a) Avval (2) ko’rinishdagi, ya’ni (1) tenglamaga mos kelgan bir jinsli tenglamani yechamiz. (2) tenglama (3) ko’rinishdagi o’zgaruvchilari ajraladigan tenglama bo’lib, u
+\begin{equation}
+\color{red} y = C epc(-\int a(x)dx)
+\end{equation}
+ko’rinishda qidiramiz. (11) ifodani (1) tenglamaga qo’yib, funksiyaga nisbatan o’zgaruvchilari ajraladigan
+\\
+\begin{equation}
+\color{red} \dfrac{dc(x)}{dx}=b(x)exp(-\int a(x)dx)
+\end{equation}
+\end{frame}
+
+%-------------------------------------------
+\begin{frame}
+differentsial tenglamaga kelamiz. Undan funksiyani topib, so’ng (3) ifodaga qo’yib, (1) tenglamaning umumiy yechimini topamiz:
+\begin{equation}
+\color{red} y = exp(-\int a(x)dx\lbrack{-}\int a(x)exp(\int a(x)+c\rbrack
+\end{equation}
+\textbf{Izoh 1.}Izoh 1. (1) tenglamaning umumiy yechimi y = u(x)v(x) ko’rinishda qidirilishi ham mumkin. Bunday usul o’rniga qo’yish yoki Bernulli usuli deyiladi.
+\textbf{Izoh 2.} Berilgan tenglama y(x) funksiyaga nisbatan emas, balki, x(y) funktsiyaga nisbatan chiziqli bo’lishi ham mumkin.
+\textbf{Misol 1.} Tenglamani yeching:
+\begin{equation}
+\color{red} y'+ 2y ctgx = 2cosx
+\end{equation}
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\quad \textbf{Yechish.} (14) tenglamaga mos kelgan 
+\begin{equation}
+\color{red} y' + 2yctgx = 0
+\end{equation}
+bir jinsli tenglamaning umumiy yechimini o’zgaruvchilarini ajratish usuli bilan topamiz:
+\begin{equation}
+\color{red} y = Csin^{-2}x
+\end{equation}
+Berilgan tenglamaning umumiy yechimini\\
+\begin{equation}
+\color{red} y = C(x)sin^{-2}x
+\end{equation}
+ko’rinishda olib ifodani (14) tenglamaga qo’yamiz:
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}
+\begin{equation}
+\color{red} C'(x)sin^{-2}x = 2cosx, ya'ni C'(x) = 2cosx sin^{-2}x
+\end{equation}
+\quad Oxirgi tenglamadan topilgan $C(x) =2/3sinx+C_{1}$ funksiyani (15) ifodaga qo’yib, (1) tenglamaning umumiy yechimini topamiz:\\
+\begin{equation}
+\color{red} y(x) = C_{1}sin^{-2}x+\dfrac{2}{3}
+\end{equation}
+\textbf{Misol} 2. Tenglamani yeching: $(2y lny + x)y' = y$
+Yechish. Ko’rinib turibdiki, y o’zgaruvchi x o’zgaruvchining funksiyasi bo’lganda bu tenglama chiziqli emas. Shuning uchun tenglamani differensiallarda yozib olamiz.
+\end{frame}
+% %---------------------------------
+\begin{frame}
+\begin{equation}
+\color{red} ygx - (-2 lny + x)dy = 0
+\end{equation}
+y ni erkli o’zgaruvchi va x ni qidirilayotgan funksiya deb qarab,
+\begin{equation}
+\color{red} \dfrac{dx}{dy}-\dfrac{x}{y}=2lny
+\end{equation}
+ko’rinishdagi x ga nisbatan chiziqli tenglamani hosil qilamiz. Oxirgi tenglamaning umumiy yechimini o’zgarmasni variatsiyalash usuli bilan topamiz
+\begin{equation}
+\color{red} x = (C + ln^{2}y)y
+\end{equation}
+\textbf{Misol}3. Tenglamani yeching: $xy' – 2y = x^4$
+\textbf{Yechish.} Berilgan tenglamani Bernulli usulida yechamiz. Tenglamada
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+y = U(x)V(x) almashtirish kiritib $U'V+UV'-\dfrac{2}{3}UV = x^{3}$tenglamani hosil qilamiz. Bundan $UV'+U(V'-\dfrac{2}{3}V) = x^{3}$ifodani yozib  $V'-\dfrac {2}{3}=V$ va $U'V = x^{3}$ ko’rinishdagi o’zguruvchilari ajraladigan ikkita tenglamaga ega bo’lamiz. Oldin birinchi, so’ng ikkinchi tenglamani yechib U(x) va V(x) funktsiyalarni topamiz.Ularni $y = U(x)V(x)$ ifodaga qo’yib umumiy yechimini $y = Cx^2 + x^4 $ko’rinishini olamiz.
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\begin{center}
+    \textbf{Tekshirish uchun savollar.}\\
+\end{center}
+  1. Chiziqli tenglamaning umumiy uo’rinishi. \\
+  2. Bir jinsli qismi.\\
+  3. Chiziqli tenglamani yechishni o’zgarmasni variatsiyalash usuli. \\
+  4. Chiziqli tenglamani yechishni o’rniga qo’yish usuli.\\
+  5. $y' + 3y/x = x$\\
+  6. Chiziqli differensial tenglama deb nimaga aytiladi?\\
+  7. Chiziqli differensial tenglamalarni yechishning Lagranj usuli?\\
+  8. Chiziqli differensial tenglamalarni yechishning Bernulli usuli?\\
+\end{frame}
+
+
+%------------------------------------------------
+% \begin{frame}
+% \quad \textbf{Boshlang'ich shartni qanoatlantiruvchi yechimni toping (Koshi masalasi).}\\
+% 1. $y'ctgx+y=2, \quad \quad \quad \quad y(π)=1$ \\
+% 2. $(x+3)y'=y, \quad \quad \quad \quad y(0)=0$\\
+% 3. $2xy'+y^2=1,\quad \quad \quad \quad y(1)=1/3$\\
+% 4. $xy'+y=y^2,\quad \quad \quad \quad \quad y(2)=3$\\
+% 5. $y/(y')=ln⁡y, \quad \quad \quad \quad \quad y(2)=1$\\
+% 6. $y'=x^2+2x+3, \quad \quad \quad \quad y(0)=1$\\
+% 7. $(1+e^2x)y^2 dy=e^x dx, \quad \quad y"(0)=0$\\
+% 8. $dx/(x(y-1))+dy/(y(x+2))=0, \quad \quad y"(1)=1$\\
+% 9. $x\sqrt{1-y^2} dx+y\sqrt{1-x^2} dy=0, \quad \quad y|_x_=_-_1=0$ 
+
+% \end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\Huge{\centerline{ETIBORINGIZ UCHUN RAHMAT}}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+
+%\frametitle{Verbatim}
+%\begin{example}[Theorem Slide Code]
+%\begin{verbatim}
+%\begin{frame}
+%\frametitle{Theorem}
+%\begin{theorem}[Mass--energy equivalence]
+%$E = mc^2$
+%\end{theorem}
+%\end{frame}\end{verbatim}
+%\end{example}% 
+
+\end{document}
+
+}
+}
+
